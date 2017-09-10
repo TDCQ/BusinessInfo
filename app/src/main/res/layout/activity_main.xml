@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.businessinfo.MainActivity"  >
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/TopViewGroup"
-
-    tools:context="com.example.android.businessinfo.MainActivity">
+    android:id="@+id/TopViewGroup" >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -65,7 +70,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="2dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,7 +88,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="2dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -104,7 +109,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="2dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -125,7 +130,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="45dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="2dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -155,81 +160,73 @@
         </RelativeLayout>
     </LinearLayout>
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/view_intro"
-        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:scrollbars="none" >
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical" >
 
-        <LinearLayout
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:text="来自52位旅游攻略" />
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/view_intro"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical" >
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/traver_girl"
+                android:id="@+id/traver_1" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textSize="21sp"
-                android:text="来自52位旅游攻略" />
+                android:layout_toRightOf="@id/traver_1"
+                android:text="旅行之人"
+                android:id="@+id/traver_1_name"/>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="5dp" >
+                android:layout_toRightOf="@id/traver_1"
+                android:layout_below="@id/traver_1_name"
+                android:numStars="5"
+                android:rating="4.5" />
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/traver_girl"
-                    android:id="@+id/traver_1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical"
+                android:text="2017-09-09" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/traver_1"
-                    android:text="旅行之人"
-                    android:id="@+id/traver_1_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/traver_1"
+                android:layout_marginTop="10dp"
+                android:text="@string/traver_1_summary" />
 
-                <RatingBar
-                    android:id="@+id/rating_bar"
-                    style="?android:attr/ratingBarStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/traver_1"
-                    android:layout_below="@id/traver_1_name"
-                    android:numStars="5"
-                    android:rating="4.5" />
+        </RelativeLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30sp"
-                    android:layout_alignParentRight="true"
-                    android:paddingRight="10dp"
-                    android:gravity="center_vertical"
-                    android:text="2017-09-09" />
+    </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_below="@id/traver_1"
-                    android:text="@string/traver_1_summary"/>
-
-            </RelativeLayout>
-
-
-        </LinearLayout>
-    </ScrollView>
 
 
 
 
 </RelativeLayout>
 
+</ScrollView>
