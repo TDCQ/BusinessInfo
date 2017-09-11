@@ -4,5 +4,17 @@
     <string name="button_ask_way">问路卡</string>
     <string name="view_intro_title">景点攻略</string>
     <string name="traver_1_summary">司马迁祠位于陕西省韩城市南十公里芝川镇东南的山岗上，东西长555米，南北宽229米，面积4.5万平方米。它东临黄河，西枕梁山，芝水萦回墓前，开势之雄，景物之胜，为韩城诸名胜之冠。</string>
+    <string name="view_business_info">景点攻略</string>
+    <string name="business_hour">开放时间</string>
+    <string name="contact_number">电话</string>
+    <string name="ticket_price">门票</string>
+    <string name="address">地址</string>
+    <string name="address_detail">陕西省韩城市</string>
+    <string name="traver_comment_block">来自52位旅游攻略</string>
+    <string name="traver_nickname">旅行之人</string>
+    <string name="traver_comment_date">2017-09-09</string>
+    <string name="business_hour_content">08:00~17:30</string>
+    <string name="contact_number_content">+8617602177102</string>
+    <string name="ticket_price_content">80</string>
 
 </resources>
